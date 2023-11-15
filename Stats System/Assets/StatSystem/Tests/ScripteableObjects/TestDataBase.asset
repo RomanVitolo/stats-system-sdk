@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6965200100167150125
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0003a63b7ede4523b25c30388128ed15, type: 3}
+  m_Name: New Item
+  m_EditorClassIdentifier: 
+  m_baseValue: 0
+  m_cap: -1
+  m_formula: {fileID: 0}
+--- !u!114 &-3634513539907984102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0003a63b7ede4523b25c30388128ed15, type: 3}
+  m_Name: New Item
+  m_EditorClassIdentifier: 
+  m_baseValue: 0
+  m_cap: -1
+  m_formula: {fileID: 0}
+--- !u!114 &-1830626419920798832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0003a63b7ede4523b25c30388128ed15, type: 3}
+  m_Name: PhysicalAttack
+  m_EditorClassIdentifier: 
+  m_baseValue: 0
+  m_cap: -1
+  m_formula: {fileID: 11400000, guid: 14f91b5d49890e14f844a84ccaaf43bc, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,9 +58,22 @@ MonoBehaviour:
   m_Name: TestDataBase
   m_EditorClassIdentifier: 
   Stats:
-  - {fileID: 11400000, guid: e6463abac276aa843a8585a239d3e353, type: 2}
-  - {fileID: 11400000, guid: 991c3f4f1d982ca439ca9ed2fd1d713c, type: 2}
-  Attributes:
-  - {fileID: 11400000, guid: 223213608024aaa42ad3247b9fc96aab, type: 2}
+  - {fileID: -1830626419920798832}
+  Attributes: []
   PrimaryStats:
-  - {fileID: 11400000, guid: 9150b71b1f117264896bae939c76e771, type: 2}
+  - {fileID: 2665985149946199473}
+--- !u!114 &2665985149946199473
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0003a63b7ede4523b25c30388128ed15, type: 3}
+  m_Name: Strength
+  m_EditorClassIdentifier: 
+  m_baseValue: 1
+  m_cap: -1
+  m_formula: {fileID: 0}

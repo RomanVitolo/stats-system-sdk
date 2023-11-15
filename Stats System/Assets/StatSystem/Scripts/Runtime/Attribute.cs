@@ -12,7 +12,7 @@ namespace StatSystem
         
         public Attribute(StatDefinition definition) : base(definition)
         {
-            m_CurrentValue = value;
+            m_CurrentValue = Value;
         }
 
         public virtual void ApplyModifier(StatModifier modifier)
@@ -24,7 +24,7 @@ namespace StatSystem
                 newValue += modifier.Magnitude;
             else if (modifier.Type == ModifierOperationType.Multiplicative) newValue *= modifier.Magnitude;
 
-            newValue = Mathf.Clamp(newValue, 0, m_value);
+            newValue = Mathf.Clamp(newValue, 0, m_Value);
 
             if (currentValue != newValue)
             {

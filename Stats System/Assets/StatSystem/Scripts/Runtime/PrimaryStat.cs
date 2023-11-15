@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using UnityEngine;
 
 [assembly: InternalsVisibleTo("StatSystem.Tests")]
 namespace StatSystem
@@ -6,7 +7,7 @@ namespace StatSystem
     public class PrimaryStat : Stat
     {
         private int m_BaseValue;
-        public override int baseValue => m_BaseValue;
+        public override int BaseValue => m_BaseValue;
 
         public PrimaryStat(StatDefinition definition) : base(definition)
         {
@@ -24,6 +25,6 @@ namespace StatSystem
         {
             m_BaseValue -= amount;
             CalculateValue();
-        }
+        }          
     }
 }

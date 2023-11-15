@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using JetBrains.Annotations;
 using NUnit.Framework;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -16,15 +17,15 @@ namespace StatSystem.Tests
                 new LoadSceneParameters(LoadSceneMode.Single));
         }
 
-        [UnityTest]
+        [UnityTest]    
         public IEnumerator Stat_WhenAddCalled_ChangesBaseValue()
         {
             yield return null;
             StatController statController = GameObject.FindObjectOfType<StatController>();
             PrimaryStat strength = statController.Stats["Strength"] as PrimaryStat;
-            Assert.AreEqual(1, strength.value);
+            Assert.AreEqual(1, strength.Value);
             strength.Add(1);
-            Assert.AreEqual(2, strength.value);
-        }
+            Assert.AreEqual(2, strength.Value);
+        }            
     }
 }

@@ -24,7 +24,7 @@ namespace StatSystem.Tests
             StatController statController = GameObject.FindObjectOfType<StatController>();
             Attribute health = statController.Stats["Health"] as Attribute;
             Assert.AreEqual(100, health.currentValue);
-            Assert.AreEqual(100, health.value);
+            Assert.AreEqual(100, health.Value);
             health.ApplyModifier(new StatModifier
             {
                 Magnitude = 20,
@@ -47,6 +47,6 @@ namespace StatSystem.Tests
                 Type = ModifierOperationType.Additive
             });
             Assert.AreEqual(0, health.currentValue);
-        }
+        }    
     }
 }

@@ -1,9 +1,7 @@
 {
-    "name": "StatSystem",
+    "name": "Core.Runtime",
     "rootNamespace": "",
-    "references": [
-        "GUID:44b35368f35104240a6551032a674ca3"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
