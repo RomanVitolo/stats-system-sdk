@@ -11,6 +11,7 @@ namespace StatSystem
         [SerializeField] private NodeGraph m_formula;
         public int baseValue => m_baseValue;
         public int cap => m_cap;
-        public NodeGraph Formula => m_formula;
+        public NodeGraph Formula => m_formula; 
+      
     }
 }

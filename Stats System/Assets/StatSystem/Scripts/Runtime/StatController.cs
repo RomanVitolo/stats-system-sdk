@@ -16,12 +16,12 @@ namespace StatSystem
         public event Action Initialized;
         public event Action WillUnitialize;
 
-        protected void Awake()
+        protected virtual void Awake()
         {
             if (!m_IsInitialized)
             {
                 Initialize();     
-            }        
+            }                
         }
 
         private void OnDestroy()
@@ -29,7 +29,7 @@ namespace StatSystem
             WillUnitialize?.Invoke();
         }
 
-        private void Initialize()
+        protected void Initialize()
         {
             foreach (StatDefinition definition in m_StatDatabase.Stats)
             {

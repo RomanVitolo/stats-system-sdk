@@ -12,7 +12,7 @@ namespace StatSystem
         
         public Attribute(StatDefinition definition) : base(definition)
         {
-            m_CurrentValue = Value;
+            m_CurrentValue = Value;            
         }
 
         public virtual void ApplyModifier(StatModifier modifier)

@@ -39,7 +39,8 @@ namespace LevelSystem
         }                                            
         public int RequiredExperience => 
             Mathf.RoundToInt(m_RequiredExperienceFormula.RootNode.Value);
-        public bool IsInitialized { get; }
+
+        public bool IsInitialized => m_IsInitialized;
         public event Action Initialized;
         public event Action WillUninitialized;
 

@@ -7,7 +7,7 @@ namespace LevelSystem
         int Level { get; }
         event Action LevelChanged;
         event Action CurrentExperienceChanged;
-        int CurrentExperience { get; }
+        int CurrentExperience { get; set; }
         int RequiredExperience { get; }
         bool IsInitialized { get; }
         event Action Initialized;

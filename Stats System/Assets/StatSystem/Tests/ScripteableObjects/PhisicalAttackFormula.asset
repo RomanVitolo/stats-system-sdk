@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a384769b8ce4f13a63efe84b585f1f8, type: 3}
   m_Name: Scalar
   m_EditorClassIdentifier: 
-  Position: {x: 216, y: 142}
+  Position: {x: 212, y: 146}
   Guid: b25410929bae51246b5ab6c3f4e0539c
   m_Value: 3
 --- !u!114 &11400000

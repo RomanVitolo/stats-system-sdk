@@ -2,7 +2,8 @@
     "name": "StatSystem",
     "rootNamespace": "",
     "references": [
-        "GUID:44b35368f35104240a6551032a674ca3"
+        "GUID:44b35368f35104240a6551032a674ca3",
+        "GUID:82142f04ecc15264ebafefa0061c02a2"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
