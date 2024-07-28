@@ -2,7 +2,8 @@
     "name": "LevelSystem",
     "rootNamespace": "",
     "references": [
-        "GUID:44b35368f35104240a6551032a674ca3"
+        "GUID:44b35368f35104240a6551032a674ca3",
+        "GUID:f3a76b1df6847aa46a27f59f5336d52b"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

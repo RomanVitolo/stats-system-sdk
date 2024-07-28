@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using LevelSystem;
 using LevelSystem.Nodes;
+using SaveSystem.Scripts.Runtime;
 using UnityEngine;
 
 namespace StatSystem
 {
     [RequireComponent(typeof(ILevelable))]
-    public class PlayerStatController : StatController
+    public class PlayerStatController : StatController, ISavable
     {
         protected ILevelable m_Levelable;
         protected int m_StatPoints = 5;
@@ -85,5 +86,39 @@ namespace StatSystem
                 }
             }
         }
+
+        #region Stat System
+
+        public object data
+        {
+            get
+            {
+                return new PlayerStatControllerData(base.data as StatControllerData)
+                {
+                    statPoints = m_StatPoints
+                };
+            }                       
+        }
+
+        public void Load(object data)
+        {
+            base.Load(data);
+            PlayerStatControllerData playerStatControllerData = (PlayerStatControllerData) data;
+            m_StatPoints = playerStatControllerData.statPoints;
+            StatPointsChanged?.Invoke();
+        }
+
+        [Serializable]
+        protected class PlayerStatControllerData : StatControllerData
+        {
+            public int statPoints;
+
+            public PlayerStatControllerData(StatControllerData statControllerData)
+            {
+                stats = statControllerData.stats;
+            }
+        }
+
+        #endregion
     }
 }
